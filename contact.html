@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Maliss Painting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Maliss Painting</a></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <i class="fas fa-phone"></i>
+                <span>(555) 123-4567</span>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for your free estimate</p>
+        </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Schedule Your Free Estimate</h2>
+                    <p>Ready to transform your space? Fill out the form below and we'll get back to you within 24 hours.</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Property Address</label>
+                            <input type="text" id="address" name="address" placeholder="Street Address, City, State, ZIP">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="projectType">Project Type *</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="">Select Project Type</option>
+                                    <option value="residential-interior">Residential Interior</option>
+                                    <option value="residential-exterior">Residential Exterior</option>
+                                    <option value="commercial-interior">Commercial Interior</option>
+                                    <option value="commercial-exterior">Commercial Exterior</option>
+                                    <option value="both">Both Interior & Exterior</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Estimated Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select Budget Range</option>
+                                    <option value="under-1000">Under $1,000</option>
+                                    <option value="1000-5000">$1,000 - $5,000</option>
+                                    <option value="5000-10000">$5,000 - $10,000</option>
+                                    <option value="10000-20000">$10,000 - $20,000</option>
+                                    <option value="over-20000">Over $20,000</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Preferred Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select Timeline</option>
+                                <option value="asap">As soon as possible</option>
+                                <option value="1-month">Within 1 month</option>
+                                <option value="2-3-months">2-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please describe your project, including rooms/areas to be painted, color preferences, and any specific requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for painting tips and special offers
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Get In Touch</h2>
+                    <p>We're here to help with all your painting needs. Contact us today!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Call Us</h3>
+                                <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                                <span>Mon-Sun: 8AM - 8PM</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email Us</h3>
+                                <p><a href="mailto:info@malisspainting.com">info@malisspainting.com</a></p>
+                                <span>Response within 24 hours</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Visit Us</h3>
+                                <p>123 Main Street<br>Your City, State 12345</p>
+                                <span>By appointment only</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Sunday<br>8:00 AM - 8:00 PM</p>
+                                <span>Emergency services available</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="service-areas-contact">
+        <div class="container">
+            <h2>Areas We Serve</h2>
+            <p>Proudly serving residential and commercial customers throughout the region</p>
+            <div class="areas-map">
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <p>Service Area Map</p>
+                </div>
+                <div class="areas-list">
+                    <h3>Primary Service Areas</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Downtown & Central City</li>
+                        <li><i class="fas fa-map-marker-alt"></i> North Suburbs</li>
+                        <li><i class="fas fa-map-marker-alt"></i> South Suburbs</li>
+                        <li><i class="fas fa-map-marker-alt"></i> East Side Neighborhoods</li>
+                        <li><i class="fas fa-map-marker-alt"></i> West Side Communities</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Surrounding Towns</li>
+                    </ul>
+                    <p class="areas-note">
+                        <i class="fas fa-info-circle"></i>
+                        Don't see your area listed? Contact us! We may still be able to serve your location.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I get a free estimate?</h3>
+                    <p>Simply fill out our contact form, call us, or send an email. We'll schedule a convenient time to visit your property and provide a detailed written estimate at no cost.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does a typical project take?</h3>
+                    <p>Project duration varies based on size and scope. A single room might take 1-2 days, while a whole house exterior could take 3-5 days. We'll provide a detailed timeline with your estimate.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide all materials?</h3>
+                    <p>Yes, we supply all necessary materials including premium paints, primers, brushes, rollers, and protective coverings. All materials are included in your estimate.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are you licensed and insured?</h3>
+                    <p>Absolutely! We are fully licensed, bonded, and insured. We can provide proof of insurance and licensing upon request for your peace of mind.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer a warranty?</h3>
+                    <p>Yes, we stand behind our work with a comprehensive warranty. Interior paint jobs are warranted for 2 years, and exterior work for 3 years against defects in workmanship.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can you help with color selection?</h3>
+                    <p>Definitely! Our color consultants can help you choose the perfect colors for your space. We consider lighting, room function, and your personal style preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="emergency-text">
+                    <h2>Need Emergency Painting Services?</h2>
+                    <p>Water damage? Fire damage? We offer emergency painting services for urgent situations.</p>
+                </div>
+                <div class="emergency-button">
+                    <a href="tel:+15551234567" class="btn btn-emergency">
+                        <i class="fas fa-phone"></i>
+                        Call Now: (555) 123-4567
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maliss Painting</h3>
+                    <p>Professional residential and commercial painting services with over 15 years of experience.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Residential Painting</a></li>
+                        <li><a href="services.html">Commercial Painting</a></li>
+                        <li><a href="services.html">Interior Painting</a></li>
+                        <li><a href="services.html">Exterior Painting</a></li>
+                        <li><a href="services.html">Color Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@malisspainting.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Your City, State</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 8AM - 8PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Maliss Painting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
