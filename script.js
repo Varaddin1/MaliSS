@@ -1,3 +1,17 @@
+window.addEventListener('resize', function() {
+    const heroSection = document.querySelector('.hero');
+    const header = document.querySelector('.header');
+
+    if (heroSection && header) {
+        const headerHeight = header.offsetHeight;
+        heroSection.style.marginTop = `${headerHeight}px`;
+    }
+});
+
+// Trigger the adjustment on page load
+window.dispatchEvent(new Event('resize'));
+
+
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
@@ -304,4 +318,5 @@ style.textContent = `
         }
     }
 `;
+
 document.head.appendChild(style);
